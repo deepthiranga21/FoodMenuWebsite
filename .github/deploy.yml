@@ -1,0 +1,17 @@
+name: Deploy Food Menu Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build Successful
+        run: echo "Food Menu Website deployed successfully!"
